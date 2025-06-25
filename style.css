@@ -1,0 +1,104 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden; /* fully disables scrolling */
+  font-family: 'Pixelify Sans', sans-serif;
+  background: url("background.png") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 1.5px solid #ACC1E9;
+  border-radius: 40px;             /* 🌟 this makes the border rounded */
+}
+
+* {
+  box-sizing: border-box;
+}
+.fancy-button {
+  background: none;
+  border: 2px solid #4A5874;
+  color: #1e2944;
+  font-size: 28px;
+  font-family:'Pixelify Sans'; /* You can change this! */
+  padding: 12px 24px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px #94a0b8;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 35%;
+  right: 25%;
+}
+
+.fancy-button:hover {
+  background-color: #4A5874;
+  color: white;
+  box-shadow: 0 0 20px #94a0b8;
+  transform: scale(1.05);
+}
+.title {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+  white-space: nowrap;
+  color: #1e2944;
+}
+.title1 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 26px;
+  font-family:'Pixelify Sans';
+  white-space: nowrap;
+  color: #1e2944;
+}
+.mood-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 2 columns */
+  grid-template-rows: repeat(2, auto); /* 3 rows */
+  gap: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mood-img {
+  width: 100px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgb(184, 174, 231);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.mood-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgb(184, 174, 231);
+}
+.title2 {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 250px;     /* controls where it wraps */
+  margin: 0 auto;
+  font-family: 'Pixelify Sans', sans-serif;
+  font-size: 24px;
+  color: #4A5874;
+  word-break: break-word;
+  text-shadow: 0 0 8px #a3c9ff;
+}
+
+
+
